@@ -1,0 +1,17 @@
+.content__image {
+  max-width: 100%;
+  position: absolute;
+  top: 412px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+@media screen and (max-width: 700px) {
+  .content__image {
+    height: auto;
+    top: 480px;
+  }
+}

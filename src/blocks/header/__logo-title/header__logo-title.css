@@ -1,0 +1,16 @@
+.header__logo-title {
+  text-transform: uppercase;
+  max-width: 147px;
+  width: 100%;
+  /* font-family: 'Golos Text'; */
+  font-size: 16.65px;
+  line-height: 108%;
+  font-weight: 700;
+  color: #595653;
+}
+
+@media screen and (max-width: 700px) {
+  .header__logo-title {
+    font-size: 14.42px;
+  }
+}

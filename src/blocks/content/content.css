@@ -1,0 +1,25 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: calc(100% - 698px);
+  width: 100%;
+  margin: -124px auto 0;
+  padding: 184px 349px 132px;
+  position: relative;
+}
+
+@media screen and (max-width: 1800px) {
+  .content {
+    max-width: calc(100% - 144px);
+    padding: 184px 72px 132px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    max-width: calc(100% - 40px);
+    padding: 166px 20px 291px;
+    justify-content: center;
+    align-items: center;
+  }
+}

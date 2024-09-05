@@ -1,0 +1,18 @@
+.content__block {
+  display: flex;
+  flex-direction: column;
+  max-width: 542px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1250px) {
+  .content__block {
+    max-width: min-content;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .content__block {
+    max-width: 335px;
+  }
+}

@@ -1,0 +1,10 @@
+.content__title_align_center {
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .content__title_align_center {
+    text-align: right;
+    padding: 1px 55.75px 0 0;
+  }
+}

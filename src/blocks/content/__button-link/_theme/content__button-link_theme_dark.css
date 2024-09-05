@@ -1,0 +1,9 @@
+.content__button-link_theme_dark {
+  color: #FFFFFF;
+  background-color: #1F1F1F;
+}
+
+.content__button-link_theme_dark:hover {
+  color: #1F1F1F;
+  background-color: #FBCE51;
+}

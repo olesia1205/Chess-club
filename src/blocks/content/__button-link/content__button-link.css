@@ -1,0 +1,19 @@
+.content__button-link {
+  padding: 14px 49px;
+  max-width: 165px;
+  border-radius: 66px;
+  font-family: 'Golos Text';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1250px) {
+  .content__button-link {
+    max-width: 100%;
+    padding: 13.1px 10px;
+  }
+}

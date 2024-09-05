@@ -1,0 +1,20 @@
+.content__button-link_theme_light {
+  border: 2px solid #1F1F1F;
+  color: #1F1F1F;
+  max-width: 161px;
+}
+
+.content__button-link_theme_light:hover {
+  color: #FFFFFF;
+  background-color: #1F1F1F;
+}
+
+@media screen and (max-width: 1250px) {
+  .content__button-link_theme_light {
+    margin-top: 14px;
+    max-width: 100%;
+    border: none;
+    background-color: #FFFFFF;
+    color: #1F1F1F;
+  }
+}

@@ -1,0 +1,12 @@
+.content__buttons-block {
+  display: flex;
+  margin: 40px 0 0;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1250px) {
+  .content__buttons-block {
+    flex-direction: column;
+    margin: 31px 0 0;
+  }
+}
