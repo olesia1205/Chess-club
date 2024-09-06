@@ -8,10 +8,17 @@
   z-index: -1;
 }
 
-
 @media screen and (max-width: 700px) {
   .content__image {
-    height: auto;
+    object-fit: contain;
     top: 480px;
+    min-height: 735px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .content__image {
+    top: 480px;
+    min-height: 813px;
   }
 }

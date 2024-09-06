@@ -21,5 +21,13 @@
     padding: 166px 20px 291px;
     justify-content: center;
     align-items: center;
+    background-image: url(/src/images/background.png);
+    z-index: -2;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .content {
+    /* background-image: none; */
   }
 }
