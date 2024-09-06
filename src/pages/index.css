@@ -20,3 +20,6 @@
 @import url(../blocks/content/__button-link/_theme/content__button-link_theme_light.css);
 @import url(../blocks/content/__image/content__image.css);
 @import url(../blocks/content/__image-pawn/content__image-pawn.css);
+@import url(../blocks/running-line/running-line.css);
+@import url(../blocks/running-line/__container/running-line__container.css);
+@import url(../blocks/running-line/__text/running-line__text.css);

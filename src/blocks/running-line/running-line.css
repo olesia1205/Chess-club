@@ -1,0 +1,10 @@
+.running-line {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: -58px;
+  left: 0;
+  background: #F54932;
+  width: 100%;
+  overflow: hidden;
+}
