@@ -15,33 +15,49 @@
         <figcaption class="header__logo-title">Клуб<br>четырех коней</figcaption>
       </figure>
     </header>
-    <main class="content">
-      <picture>
-        <source media="(max-width: 700px)" srcset="<%=require('./images/city-small.png')%>">
-        <img class="content__image" width="1920" height="700" src="<%=require('./images/city.png')%>" alt="Шахматный город">
-      </picture>
-      <section class="content__block" aria-label="main section">
-        <h1 class="content__title">
-          <span class="content__title_align_left">Превратите
-            <span class="content__title_special_letter-spacing">у</span>ездный&nbsp;город
-          </span>
-          <span class="content__title_align_center">в столицу</span>
-          <span class="content__title_align_right">земного шара</span>
-        </h1>
-        <p class="content__subtitle">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
-        <div class="content__buttons-block">
-          <a href="#" class="content__button-link content__button-link_theme_dark">Поддержать шахматную мысль</a>
-          <a href="#" class="content__button-link content__button-link_theme_light">Подробнее о турнире</a>
+
+    <main class="main">
+      <section class="content" aria-label="main section">
+        <picture>
+          <source media="(max-width: 700px)" srcset="<%=require('./images/city-small.png')%>">
+          <img class="content__image" width="1920" height="700" src="<%=require('./images/city.png')%>" alt="Шахматный город">
+        </picture>
+        <div class="content__block">
+          <h1 class="content__title">
+            <span class="content__title_align_left">Превратите
+              <span class="content__title_special_letter-spacing">у</span>ездный&nbsp;город
+            </span>
+            <span class="content__title_align_center">в столицу</span>
+            <span class="content__title_align_right">земного шара</span>
+          </h1>
+          <p class="content__subtitle">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
+          <div class="content__buttons-block">
+            <a href="#" class="content__button-link content__button-link_theme_dark">Поддержать шахматную мысль</a>
+            <a href="#" class="content__button-link content__button-link_theme_light">Подробнее о турнире</a>
+          </div>
+        </div>
+        <div class="running-line top-line">
+          <ul class="running-line__container">
+            <li class="running-line__text">Дело помощи утопающим — дело рук самих утопающих!</li>
+            <li class="running-line__text">Шахматы двигают вперёд не только культуру, но и экономику!</li>
+            <li class="running-line__text">Лёд тронулся, господа присяжные заседатели!</li>
+          </ul>
         </div>
       </section>
-      <div class="running-line top-line">
-        <ul class="running-line__container">
-          <li class="running-line__text">Дело помощи утопающим — дело рук самих утопающих!</li>
-          <li class="running-line__text">Шахматы двигают вперёд не только культуру, но и экономику!</li>
-          <li class="running-line__text">Лёд тронулся, господа присяжные заседатели!</li>
-        </ul>
-      </div>
+
+      <section class="support" aria-label="support section">
+        <div class="support__container">
+          <h2 class="support__subtitle">
+            Чтобы поддержать Международный васюкинский турнир посетите лекцию на тему: <span>«Плодотворная дебютная идея»</span>
+          </h2>
+          <p class="support__subtitle support__subtitle_mobile">Чтобы&nbsp;поддержать Международный васюкинский турнир</p>
+          <img class="support__image" src="<%=require('./images/chess-players.png')%>" alt="Игроки в шахматы">
+          <p class="support__subtitle support__subtitle_mobile">посетите&nbsp;лекцию на тему: <span>«Плодотворная дебютная идея»</span></p>
+        </div>
+      </section>
+
     </main>
   </div>
 </body>
 </html>
+

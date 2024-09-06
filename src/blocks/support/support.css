@@ -1,0 +1,19 @@
+.support {
+  display: flex;
+  margin: 138px 0 0;
+  max-width: calc(100% - 144px);
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .support {
+    margin: 88px 0 0;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .support {
+    max-width: calc(100% - 38px);
+  }
+}

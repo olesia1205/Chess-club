@@ -1,0 +1,13 @@
+.support__image {
+  width: 394px;
+  height: 250px;
+}
+
+@media screen and (max-width: 1124px) {
+  .support__image {
+    width: 335px;
+    height: auto;
+    padding: 24px 0;
+  }
+}
+

@@ -1,0 +1,35 @@
+.support__subtitle {
+  margin: 0 20px 0 0;
+  color: #313131;
+  font-family: 'Merriweather';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+  text-transform: uppercase;
+  max-width: 764px;
+}
+
+.support__subtitle span {
+  font-weight: 700;
+  color: #F54932;
+}
+
+@media screen and (max-width: 1124px) {
+  .support__subtitle {
+    font-size: 2.7vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .support__subtitle {
+    display: none;
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .support__subtitle {
+    font-size: 28px;
+  }
+}
