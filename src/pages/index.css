@@ -28,3 +28,6 @@
 @import url(../blocks/support/__subtitle/support__subtitle.css);
 @import url(../blocks/support/__subtitle/_mobile/support__subtitle_mobile.css);
 @import url(../blocks/support/__image/support__image.css);
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__text/footer__text.css);
