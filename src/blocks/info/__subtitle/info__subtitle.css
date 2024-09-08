@@ -1,0 +1,28 @@
+.info__subtitle {
+  margin: 48px 0 0 0;
+  color: #313131;
+  font-family: 'Merriweather';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+  text-transform: uppercase;
+}
+
+.info__subtitle span {
+  color: #F54932;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 700px) {
+  .info__subtitle {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .info__subtitle {
+    margin: 19px 0 0;
+  }
+}
+

@@ -1,0 +1,6 @@
+.info__container {
+  display: flex;
+  max-width: 704px;
+  width: 100%;
+  flex-direction: column;
+}

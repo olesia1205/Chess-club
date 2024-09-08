@@ -1,0 +1,14 @@
+.info__value {
+  padding: 15px 0 15px 15px;
+  color: #313131;
+  font-weight: 600;
+  opacity: 1;
+  border-right: none;
+}
+
+@media screen and (max-width: 700px) {
+  .info__value {
+    border-bottom: 2px solid #D0D0D0;
+    padding: 14px 0;
+  }
+}

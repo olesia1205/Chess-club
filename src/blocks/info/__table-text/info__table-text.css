@@ -1,0 +1,54 @@
+.info__table-text {
+  padding: 15px 15px 15px 0;
+  color: #313131;
+  font-family: "Golos Text";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  opacity: 0.7;
+  border-right: 2px solid #D0D0D0;
+  border-bottom: 2px solid #D0D0D0;
+}
+
+.info__table-text:first-child {
+  padding: 0 15px 15px 0;
+}
+
+.info__table-text:nth-child(2) {
+  padding: 0 15px 15px 15px;
+}
+
+.info__table-text:nth-child(9) {
+  border-bottom: none;
+  padding: 15px 15px 0 0;
+}
+
+.info__table-text:last-child {
+  border-bottom: none;
+  padding: 15px 15px 0 15px;
+}
+
+.info__table-text:last-child span {
+  text-decoration: line-through 2px solid #F54932;
+  padding: 0 12px 0 0;
+}
+
+@media screen and (max-width: 700px) {
+  .info__table-text {
+    border: none;
+    padding: 15px 0 0;
+  }
+
+  .info__table-text:nth-child(2) {
+    padding: 12px 0 15px;
+  }
+
+  .info__table-text:last-child {
+    padding: 12px 0 16px;
+  }
+
+  .info__table-text:first-child {
+    padding: 15px 0 0;
+  }
+}

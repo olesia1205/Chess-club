@@ -1,0 +1,16 @@
+.info__text {
+  margin: 48px 0 0;
+  color: #3057A2;
+  font-family: "Golos Text";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+@media screen and (max-width: 700px) {
+  .info__text {
+    font-size: 18px;
+    margin: 24px 0 0;
+  }
+}

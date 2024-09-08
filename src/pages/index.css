@@ -28,6 +28,14 @@
 @import url(../blocks/support/__subtitle/support__subtitle.css);
 @import url(../blocks/support/__subtitle/_mobile/support__subtitle_mobile.css);
 @import url(../blocks/support/__image/support__image.css);
+@import url(../blocks/info/info.css);
+@import url(../blocks/info/__image/info__image.css);
+@import url(../blocks/info/__container/info__container.css);
+@import url(../blocks/info/__subtitle/info__subtitle.css);
+@import url(../blocks/info/__table/info__table.css);
+@import url(../blocks/info/__table-text/info__table-text.css);
+@import url(../blocks/info/__value/info__value.css);
+@import url(../blocks/info/__text/info__text.css);
 
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__text/footer__text.css);
