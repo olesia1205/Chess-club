@@ -1,0 +1,6 @@
+.stages__list {
+  margin: 54px 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, calc(100%/3 - 13px));
+  gap: 20px;
+}

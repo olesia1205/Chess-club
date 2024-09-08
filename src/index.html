@@ -78,6 +78,22 @@
           </div>
         </section>
 
+        <section class="stages">
+          <div class="stages__container">
+            <h2 class="stages__subtitle">
+              Этапы преображения Васюков <span>Будущие источники обогащения васюкинцев</span>
+            </h2>
+            <div class="stages__list" id="stagesList"></div>
+            <img class="stages__image" src="<%=require('./images/airplane.png')%>" alt="Аэроплан">
+          </div>
+        </section>
+
+        <template id="cardTemplate">
+          <div class="stages__card">
+            <span class="stages__card-number"></span>
+            <p class="stages__card-description"></p>
+          </div>
+        </template>
       </main>
       <footer class="footer">
         <p class="footer__text">

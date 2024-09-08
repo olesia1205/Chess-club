@@ -1,0 +1,43 @@
+.stages__card-number {
+  display: grid;
+  margin: 0 16px 0 0;
+  background-color: #fff;
+  color: #313131;
+  font-family: "Golos Text";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  place-items: center;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 60px;
+}
+
+.stages__card3 {
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 3;
+}
+
+.stages__card7 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  min-height: 96px;
+}
+
+.stages__card7 p {
+  max-width: 446px;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 1250px) {
+  .stages__card7 p {
+    max-width: 375px;
+  }
+}

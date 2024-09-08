@@ -1,0 +1,9 @@
+.stages__card {
+  display: flex;
+  padding: 20px;
+  background: url(../../../images/image23.png), url(../../../images/stampPaper.png);
+  background-blend-mode: color-burn;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 72px;
+}

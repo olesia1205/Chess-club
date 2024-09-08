@@ -1,0 +1,36 @@
+.stages__subtitle {
+  margin: 0;
+  color: #313131;
+  font-family: 'Merriweather';
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: uppercase;
+  max-width: 806px;
+}
+
+.stages__subtitle span {
+  padding-left: 5px;
+  display: inline-block;
+  max-width: 280px;
+  color: #3057A2;
+  font-family: "Golos Text";
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+@media screen and (max-width: 900px) {
+  .stages__subtitle {
+    font-size: 36px;
+    line-height: 110%;
+  }
+
+  .stages__subtitle span {
+    padding: 12px 0 0;
+    font-size: 18px;
+    line-height: 21.6px;
+    max-width: 100%;
+  }
+}

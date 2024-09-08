@@ -1,0 +1,20 @@
+.stages {
+  margin: 185px 72px 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: calc(100% - 144px);
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .stages {
+    max-width: calc(100% - 72px);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .stages {
+    margin: 120px 20px 0;
+    max-width: calc(100% - 40px);
+  }
+}
