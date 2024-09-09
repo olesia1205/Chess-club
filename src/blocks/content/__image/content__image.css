@@ -13,6 +13,7 @@
     object-fit: contain;
     top: 480px;
     min-height: 735px;
+    z-index: 0;
   }
 }
 
