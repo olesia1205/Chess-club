@@ -1,0 +1,11 @@
+.stages__cards-mobile {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .stages__cards-mobile {
+    display: flex;
+    margin: 91px 0 0;
+    width: 100%;
+  }
+}

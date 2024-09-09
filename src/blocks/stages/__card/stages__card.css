@@ -7,3 +7,14 @@
   background-size: cover;
   min-height: 72px;
 }
+
+@media (max-width: 900px) {
+  .stages__card {
+    display: none;
+    width: 100%;
+  }
+
+  .stages__card.active {
+    display: block;
+  }
+}

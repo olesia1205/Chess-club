@@ -1,0 +1,31 @@
+.stages__card-mobile {
+  display: none;
+}
+
+.stages__card-mobile div {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .stages__card-mobile {
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+    max-width: calc(100% - 40px);
+    width: 100%;
+    height: 176px;
+    padding: 62px 20px;
+    background: url(../../../images/image23.png), url(../../../images/stampPaper.png);
+    background-blend-mode: color-burn;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .stages__card-mobile.active {
+    display: flex;
+  }
+
+  .stages__card-mobile div {
+    display: flex;
+  }
+}

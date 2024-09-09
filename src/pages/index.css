@@ -41,9 +41,18 @@
 @import url(../blocks/stages/__subtitle/stages__subtitle.css);
 @import url(../blocks/stages/__list/stages__list.css);
 @import url(../blocks/stages/__card/stages__card.css);
+@import url(../blocks/stages/__card-active/stages__card-active.css);
 @import url(../blocks/stages/__card-number/stages__card-number.css);
 @import url(../blocks/stages/__card-description/stages__card-description.css);
 @import url(../blocks/stages/__image/stages__image.css);
+@import url(../blocks/stages/__cards-mobile/stages__cards-mobile.css);
+@import url(../blocks/stages/__card-mobile/stages__card-mobile.css);
+@import url(../blocks/pagination/pagination.css);
+@import url(../blocks/pagination/__button/pagination__button.css);
+@import url(../blocks/pagination/__button-prev/pagination__button-prev.css);
+@import url(../blocks/pagination/__button-next/pagination__button-next.css);
+@import url(../blocks/pagination/__points/pagination__points.css);
+@import url(../blocks/pagination/__point/pagination__point.css);
 
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__text/footer__text.css);

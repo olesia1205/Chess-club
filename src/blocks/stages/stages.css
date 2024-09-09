@@ -8,13 +8,12 @@
 
 @media screen and (max-width: 500px) {
   .stages {
-    max-width: calc(100% - 72px);
+    max-width: calc(100% - 40px);
   }
 }
 
 @media screen and (max-width: 375px) {
   .stages {
     margin: 120px 20px 0;
-    max-width: calc(100% - 40px);
   }
 }

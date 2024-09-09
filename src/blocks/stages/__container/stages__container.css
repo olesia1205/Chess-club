@@ -4,3 +4,9 @@
   flex-direction: column;
   position: relative;
 }
+
+@media screen and (max-width: 375px) {
+  .stages__container {
+    overflow: hidden;
+  }
+}

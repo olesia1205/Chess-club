@@ -7,3 +7,10 @@
   font-weight: 500;
   line-height: 24px;
 }
+
+@media screen and (max-width: 700px) {
+  .stages__card-description {
+    font-size: 18px;
+    line-height: 120%;
+  }
+}

@@ -32,8 +32,8 @@
             </h1>
             <p class="content__subtitle">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
             <div class="content__buttons-block">
-              <a href="#" class="content__button-link content__button-link_theme_dark">Поддержать шахматную мысль</a>
-              <a href="#" class="content__button-link content__button-link_theme_light">Подробнее о турнире</a>
+              <a href="#support" class="content__button-link content__button-link_theme_dark">Поддержать шахматную мысль</a>
+              <a href="#info" class="content__button-link content__button-link_theme_light">Подробнее о турнире</a>
             </div>
           </div>
           <div class="running-line top-line">
@@ -45,7 +45,7 @@
           </div>
         </section>
 
-        <section class="support" aria-label="support section">
+        <section class="support" aria-label="support section" id="support">
           <div class="support__container">
             <h2 class="support__subtitle">
               Чтобы поддержать Международный васюкинский турнир посетите лекцию на тему: <span>«Плодотворная дебютная идея»</span>
@@ -62,7 +62,7 @@
             <h2 class="info__subtitle">
               и Сеанс <span>одновременной игры в шахматы на 160 досках</span> гроссмейстера О. Бендера
             </h2>
-            <ul class="info__table">
+            <ul class="info__table" id="info">
               <li class="info__table-text">Место проведения:</li>
               <li class="info__table-text info__value">Клуб «Картонажник»</li>
               <li class="info__table-text">Дата и время мероприятия:</li>
@@ -83,7 +83,51 @@
             <h2 class="stages__subtitle">
               Этапы преображения Васюков <span>Будущие источники обогащения васюкинцев</span>
             </h2>
-            <div class="stages__list" id="stagesList"></div>
+            <div class="stages__list" id="stagesList">
+              <div class="stages__cards-mobile">
+                <div class="stages__card-mobile active">
+                  <div>
+                    <span class="stages__card-number">1</span>
+                    <p class="stages__card-description">Строительство железнодорожной магистрали Москва-Васюки</p>
+                  </div>
+                  <div>
+                    <span class="stages__card-number">2</span>
+                    <p class="stages__card-description">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</p>
+                  </div>
+                </div>
+                <div class="stages__card-mobile">
+                  <div>
+                    <span class="stages__card-number">3</span>
+                    <p class="stages__card-description">Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет
+                    </p>
+                  </div>
+                </div>
+                <div class="stages__card-mobile">
+                  <div>
+                    <span class="stages__card-number">4</span>
+                    <p class="stages__card-description">Строительство дворца для турнира</p>
+                  </div>
+                  <div>
+                    <span class="stages__card-number">5</span>
+                    <p class="stages__card-description">Размещение гаражей для гостевого автотранспорта</p>
+                  </div>
+                </div>
+                <div class="stages__card-mobile">
+                  <div>
+                    <span class="stages__card-number">6</span>
+                    <p class="stages__card-description">Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</p>
+                  </div>
+                </div>
+                <div class="stages__card-mobile">
+                  <div>
+                    <span class="stages__card-number">7</span>
+                    <p class="stages__card-description">Создание аэропорта «Большие Васюки» с регулярным отправлением
+                      почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <img class="stages__image" src="<%=require('./images/airplane.png')%>" alt="Аэроплан">
           </div>
         </section>
@@ -94,6 +138,12 @@
             <p class="stages__card-description"></p>
           </div>
         </template>
+
+        <div class="pagination">
+          <button class="pagination__button pagination__button-prev"></button>
+          <div class="pagination__points"></div>
+          <button class="pagination__button pagination__button-next"></button>
+        </div>
       </main>
       <footer class="footer">
         <p class="footer__text">

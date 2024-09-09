@@ -4,3 +4,40 @@
   right: -65px;
 }
 
+@media screen and (max-width: 1340px) {
+  .stages__image {
+    top: 350px;
+    height: 190px;
+    width: 335px;
+    rotate: 395grad;
+  }
+}
+
+@media screen and (max-width: 1124px) {
+  .stages__image {
+    top: 125px;
+    height: 190px;
+    width: 335px;
+    rotate: 395grad;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .stages__image {
+    top: 120px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .stages__image {
+    top: 158px;
+    left: -10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .stages__image {
+    top: 194px;
+    left: 10px;
+  }
+}
