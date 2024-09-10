@@ -43,4 +43,4 @@ npm run build
 
 ***
 
-![screenshot](src/images/screenshot.jpg)
+![screenshot](src/images/screenshot.png)
