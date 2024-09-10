@@ -53,6 +53,22 @@
 @import url(../blocks/pagination/__button-next/pagination__button-next.css);
 @import url(../blocks/pagination/__points/pagination__points.css);
 @import url(../blocks/pagination/__point/pagination__point.css);
-
+@import url(../blocks/members/members.css);
+@import url(../blocks/members/__subtitle/members__subtitle.css);
+@import url(../blocks/members/__container/members__container.css);
+@import url(../blocks/members/__card/members__card.css);
+@import url(../blocks/members/__image/members__image.css);
+@import url(../blocks/members/__member-name/members__member-name.css);
+@import url(../blocks/members/__member-title/members__member-title.css);
+@import url(../blocks/members/__button/members__button.css);
+@import url(../blocks/members/__pagination/members__pagination.css);
+@import url(../blocks/members/__pagination-button/members__pagination-button.css);
+@import url(../blocks/members/__pagination-button/_next/members__pagination-button_next.css);
+@import url(../blocks/members/__pagination-button/_prev/members__pagination-button_prev.css);
+@import url(../blocks/members/__counter-container/members__counter-container.css);
+@import url(../blocks/members/__counter-item/members__counter-item.css);
+@import url(../blocks/members/__counter-current/members__counter-current.css);
+@import url(../blocks/members/__counter-total/members__counter-total.css);
+@import url(../blocks/members/__counter-slash/members__counter-slash.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__text/footer__text.css);

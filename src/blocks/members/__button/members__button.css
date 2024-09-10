@@ -1,0 +1,19 @@
+.members__button {
+  margin: 20px 0 0;
+  padding: 11px;
+  color: #3057A2;
+  font-family: "Golos Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 11px;
+  border: 1px solid #3057A2;
+  cursor: pointer;
+  border-radius: 62px;
+  transition: background-color 0.3s ease;
+}
+
+.members__button:hover {
+  background-color: #3057A2;
+  color: #FFF;
+}

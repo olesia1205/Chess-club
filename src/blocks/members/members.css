@@ -1,0 +1,21 @@
+.members {
+  display: flex;
+  justify-content: space-between;
+  margin: 200px 72px 80px;
+  max-width: calc(100% - 144px);
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+}
+
+@media screen and (max-width: 500px) {
+  .members {
+    max-width: calc(100% - 40px);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .members {
+    margin: 120px 20px 100px;
+  }
+}

@@ -1,5 +1,6 @@
 import './index.css';
 import { cardData } from '../assets/constants';
+import { membersData } from '../assets/constants';
 
 // Отрисовка карточек в секции stages для десктопа
 document.addEventListener('DOMContentLoaded', function() {
@@ -11,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const numberElement = cardClone.querySelector('.stages__card-number');
     const descriptionElement = cardClone.querySelector('.stages__card-description');
 
-    numberElement.textContent = `${card.number}`;
+    numberElement.textContent = card.number;
     descriptionElement.textContent = card.description;
     stagesList.appendChild(cardClone);
   });
@@ -76,6 +77,72 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   createPaginationPoints();
+  updateCards();
+});
+
+// Отрисовка карточек участников турнира и логика работы пагинатора
+document.addEventListener('DOMContentLoaded', function() {
+  const membersContainer = document.getElementById('membersContainer');
+  const cardTemplate = document.getElementById('memberCard').content;
+  const prevButton = document.querySelector('.members__pagination-button_prev');
+  const nextButton = document.querySelector('.members__pagination-button_next');
+  const currentCounter = document.querySelector('.members__counter-current');
+  const totalCounter = document.querySelector('.members__counter-total');
+
+  membersData.forEach(card => {
+    const cardClone = document.importNode(cardTemplate, true);
+    const nameElement = cardClone.querySelector('.members__member-name');
+    const titleElement = cardClone.querySelector('.members__member-title');
+
+    nameElement.textContent = card.name;
+    titleElement.textContent = card.title;
+    membersContainer.appendChild(cardClone);
+  });
+
+  const cards = document.querySelectorAll('.members__card');
+  const totalCards = cards.length;
+
+  let currentIndex = 0;
+
+  function getCardsPerPage() {
+    if (window.innerWidth >= 1366) {
+      return 3;
+    } else if (window.innerWidth >= 952) {
+      return 2;
+    } else {
+      return 1;
+    };
+  };
+
+  function updateCards() {
+    const cardsPerPage = getCardsPerPage();
+    cards.forEach(card => card.style.display = 'none');
+
+    for (let i = 0; i < cardsPerPage; i++) {
+      const cardToShow = (currentIndex + i) % totalCards;
+      cards[cardToShow].style.display = 'flex';
+    }
+
+    const firstCardDisplayed = currentIndex + 1;
+    currentCounter.textContent = firstCardDisplayed;
+    totalCounter.textContent = totalCards;
+  };
+
+  prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+    updateCards();
+  });
+
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % totalCards;
+    updateCards();
+  });
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % totalCards;
+    updateCards();
+  }, 4000);
+
   updateCards();
 });
 

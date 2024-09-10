@@ -1,0 +1,17 @@
+.members__subtitle {
+  margin: 0;
+  color: #313131;
+  font-family: 'Merriweather';
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 900px) {
+  .members__subtitle {
+    font-size: 36px;
+    line-height: 110%;
+  }
+}

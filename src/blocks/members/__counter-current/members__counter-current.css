@@ -1,0 +1,11 @@
+.members__counter-current {
+  margin: 0 1px 0 0;
+  width: 12px;
+  text-align: left;
+}
+
+@media screen and (max-width: 900px) {
+  .members__counter-current {
+    width: 10px;
+  }
+}

@@ -1,0 +1,28 @@
+.members__pagination-button {
+  padding: 0;
+  margin: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #313131;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.members__pagination-button:hover {
+  background-color: #FBCE51;
+}
+
+.members__pagination-button:disabled {
+  background-color: #D6D6D6;
+}
+
+@media screen and (max-width: 900px) {
+  .members__pagination-button {
+    width: 36px;
+    height: 36px;
+  }
+}

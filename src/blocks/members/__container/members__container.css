@@ -1,0 +1,19 @@
+.members__container {
+  margin: 60px 0 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (max-width: 1340px) {
+  .members__container {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .members__container {
+    margin: 40px 0 0;
+    justify-content: none;
+  }
+}

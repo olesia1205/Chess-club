@@ -1,0 +1,15 @@
+.members__pagination {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+@media screen and (max-width: 1124px) {
+  .members__pagination {
+    margin: 40px 0 0;
+    top: 0;
+    position: relative;
+    justify-content: center;
+  }
+}

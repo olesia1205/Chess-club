@@ -132,6 +132,12 @@
           </div>
         </section>
 
+        <div class="pagination">
+          <button class="pagination__button pagination__button-prev"></button>
+          <div class="pagination__points"></div>
+          <button class="pagination__button pagination__button-next"></button>
+        </div>
+
         <template id="cardTemplate">
           <div class="stages__card">
             <span class="stages__card-number"></span>
@@ -139,11 +145,30 @@
           </div>
         </template>
 
-        <div class="pagination">
-          <button class="pagination__button pagination__button-prev"></button>
-          <div class="pagination__points"></div>
-          <button class="pagination__button pagination__button-next"></button>
-        </div>
+        <section class="members">
+          <h2 class="members__subtitle">Участники турнира</h2>
+          <div class="members__container" id="membersContainer"></div>
+
+          <div class="members__pagination">
+            <button class="members__pagination-button members__pagination-button_prev"></button>
+            <div class="members__counter-container">
+              <span class="members__counter-item members__counter-current"></span>
+              <span class="members__counter-item members__counter-slash">/</span>
+              <span class="members__counter-item members__counter-total"></span>
+            </div>
+            <button class="members__pagination-button members__pagination-button_next"></button>
+          </div>
+        </section>
+
+        <template id="memberCard">
+          <div class="members__card">
+            <img class="members__image" src="<%=require('./images/member.png')%>" alt="Участник турнира">
+            <h3 class="members__member-name"></h3>
+            <p class="members__member-title"></p>
+            <button class="members__button">Подробнее</button>
+          </div>
+        </template>
+
       </main>
       <footer class="footer">
         <p class="footer__text">

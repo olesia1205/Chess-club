@@ -1,0 +1,13 @@
+.members__image {
+  width: 320px;
+  height: 320px;
+  margin: 0 37px;
+}
+
+@media screen and (max-width: 900px) {
+  .members__image {
+    width: 244px;
+    height: 244px;
+    margin: 0 46px 0 45px;
+  }
+}
