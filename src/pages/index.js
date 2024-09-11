@@ -160,3 +160,63 @@ document.addEventListener('DOMContentLoaded', function() {
     console.error('One of the elements was not found')
   }
 });
+
+// Изменение расположения элементов "Плата за игру:" и "50 коп." для мобильных устройств
+document.addEventListener('DOMContentLoaded', function () {
+  let paymentLabelOriginal = null;
+  let paymentValueOriginal = null;
+  let combinedContainer = null;
+
+  function adjustMobileLayout() {
+    const parent = document.getElementById('info');
+    const paymentLabel = document.querySelector('.info__table-text:nth-child(7)');
+    const paymentValue = document.querySelector('.info__table-text:nth-child(8)');
+
+    if (window.innerWidth <= 700) {
+      if (paymentLabel && paymentValue) {
+        if (!paymentLabelOriginal && !paymentValueOriginal) {
+          paymentLabelOriginal = paymentLabel;
+          paymentValueOriginal = paymentValue;
+        }
+
+        if (!document.querySelector('.info__combined-mobile')) {
+          combinedContainer = document.createElement('div');
+          combinedContainer.classList.add('info__combined-mobile');
+          combinedContainer.style.display = 'flex';
+          combinedContainer.style.padding = '16px 0';
+          combinedContainer.style.alignItems = 'center';
+          combinedContainer.style.borderBottom = '2px solid #D0D0D0';
+
+          paymentLabelOriginal.style.padding ='0';
+          paymentValueOriginal.style.padding ='0 0 0 12px';
+
+          const paymentLabelClone = paymentLabelOriginal.cloneNode(true);
+          const paymentValueClone = paymentValueOriginal.cloneNode(true);
+
+          combinedContainer.appendChild(paymentLabelClone);
+          combinedContainer.appendChild(paymentValueClone);
+
+          parent.insertBefore(combinedContainer, paymentLabelOriginal);
+
+          parent.removeChild(paymentLabelOriginal);
+          parent.removeChild(paymentValueOriginal);
+        }
+      }
+    } else {
+      if (document.querySelector('.info__combined-mobile')) {
+        parent.insertBefore(paymentLabelOriginal, combinedContainer);
+        parent.insertBefore(paymentValueOriginal, combinedContainer);
+
+        parent.removeChild(combinedContainer);
+
+        paymentLabelOriginal.style.padding = '15px 15px 15px 0';
+        paymentValueOriginal.style.padding = '15px 0 15px 15px';
+
+        combinedContainer = null;
+      }
+    }
+  }
+
+  adjustMobileLayout();
+  window.addEventListener('resize', adjustMobileLayout);
+});
